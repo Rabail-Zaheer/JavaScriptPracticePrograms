@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Array Elements dropdown list</h1>
+
+    <div class="form-group">
+      <select class="form-control" name="" id="month"></select>
+    </div>
+
+    <script>
+      let month = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      let option = "";
+      for (let i = 0; i < month.length; i++) {
+        // console.log(month[i]);
+        option += '<option value="' + month[i] + '">' + month[i] + "</option>";
+      }
+
+      document.getElementById("month").innerHTML = option;
+    </script>
+  </body>
+</html>
